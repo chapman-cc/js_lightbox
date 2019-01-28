@@ -101,17 +101,12 @@ $(document).ready(function() {
 
     // ---------- Search bar ----------
     $('#searchBar').on('keyup', function() {
-        $('.img a').each(function() {
-            let $searchTerm = $('#searchBar').val().toLowerCase();
-            if ($(this).attr("title").toLowerCase().indexOf($searchTerm) >= 0) {
-                $(this).toggle()
-            }
-        })
+        let $searchTerm = $('#searchBar').val().toLowerCase();
+
+        $('.img a').filter(function() {
+            $(this).toggle($(this).attr("title").toLowerCase().indexOf($searchTerm) >= 0);
+        });
     });
-
-    // const $arrayAtag = $('.img a').attr("title");
-    // console.log($arrayAtag);
-
 
     // ========================================
     // ---------- Plugin: viewbox ----------
