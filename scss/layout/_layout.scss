@@ -3,13 +3,24 @@
 // ========================================
 .container {
     @include center-container($max: 1024px) ;
-    min-width: 360px;
+    min-width: 300px;
 }
 
 .img {
     @include flexy($justify: space-between);
 
-    &__photo { 
-        margin: em(28px)
+    &__photo {
+        margin: em(3px);
+        width: em(156px);
     }
+    @include mq(middle) {
+        &__photo {
+            margin: em(14px);
+        }
+    };
+    @include mq(big) {
+        &__photo {
+            margin: em(28px);
+        }
+    };
 }
