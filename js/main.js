@@ -98,7 +98,7 @@ $(document).ready(function() {
         $(".img").append($a);
     })
 
-
+    new LuminousGallery($(".img__link"))
 
 
 
