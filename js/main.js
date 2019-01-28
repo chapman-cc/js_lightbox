@@ -78,7 +78,6 @@ $(document).ready(function() {
     // ========================================
     // ---------- Codes ----------
 
-    //create each loop for making img tag
     $.each($imgCaptions, function(index, value) {
         // create <a> tag, add href path
         let $a = $("<a>");
@@ -98,6 +97,11 @@ $(document).ready(function() {
         $(".img").append($a);
     })
 
+    // ========================================
+    // ---------- Plugin: viewbox ----------
+    $(function(){
+    	$('.img__link').viewbox();
+    });
 
 
 
