@@ -1,6 +1,7 @@
 
 photo_captions.txt
 gallery_mockup.png
-photo_gallery_v4.zip
 photos/.DS_Store
 photo_lightbox.png
+.tern-project
+*.zip
