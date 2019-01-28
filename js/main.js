@@ -82,11 +82,14 @@ $(document).ready(function() {
     $.each($imgCaptions, function(index, value) {
         // create <a> tag, add href path
         let $a = $("<a>");
-        $a.attr("href", `photos/${value.imgFile}.jpg`)
+        $a.attr({
+            "class": "img__link",
+            "href": `photos/${value.imgFile}.jpg`
+        });
         //Create <img> tag, add source path, add alt value
         let $img = $("<img>");
         $img.attr({
-            "class": "img__photo",
+            "class": "img__thumbnail",
             "alt": value.imgAlt,
             "src": `photos/thumbnails/${value.imgFile}.jpg`
         });

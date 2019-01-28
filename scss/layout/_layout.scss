@@ -9,17 +9,17 @@
 .img {
     @include flexy($justify: space-between);
 
-    &__photo {
+    &__thumbnail {
         margin: em(3px);
         width: em(156px);
     }
     @include mq(middle) {
-        &__photo {
+        &__thumbnail {
             margin: em(14px);
         }
     };
     @include mq(big) {
-        &__photo {
+        &__thumbnail {
             margin: em(28px);
         }
     };
