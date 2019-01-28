@@ -78,6 +78,7 @@ $(document).ready(function() {
     // ========================================
     // ---------- Codes ----------
 
+    // ---------- Generate images ----------
     $.each($imgCaptions, function(index, value) {
         // create <a> tag, add href path
         let $a = $("<a>");
@@ -98,6 +99,8 @@ $(document).ready(function() {
         $(".img").append($a);
     })
 
+    // ---------- Search bar ---------- 
+
     // ========================================
     // ---------- Plugin: viewbox ----------
     // config
@@ -110,11 +113,5 @@ $(document).ready(function() {
     $(function(){
     	$('.img__link').viewbox();
     });
-
-
-
-
-
-
     // ========================================
 });
