@@ -2,16 +2,16 @@
 // IMAGE Styling
 // -------------------------------------------
 
-.img-- {
-    &logo {
+.img {
+    &--logo {
         @extend %img;
     }
 
-    &avatar {
+    &--avatar {
         @extend %img;
     }
 
-    &frame {
+    &--frame {
         @extend %img;
         width: 100%;
         height: auto;
