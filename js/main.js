@@ -75,12 +75,23 @@ $(document).ready(function() {
         }
     ];
 
+    // ========================================
+    // ---------- Codes ----------
+
     //create each loop for making img tag
-    // <img src="photos\thumbnails\01.jpg" alt="">
-    // <img src="photos\thumbnails\02.jpg" alt="">
-    // <img src="photos\thumbnails\03.jpg" alt="">
-
-
+    $.each($imgCaptions, function(index, value) {
+        // create <a> tag, add href path
+        let $a = $("<a>");
+        $a.attr("href", `photos/${value.imgFile}.jpg`)
+        //Create <img> tag, add source path, add alt value
+        let $img = $("<img>");
+        $img.attr("src", `photos/thumbnails/${value.imgFile}.jpg`)
+        $img.attr("alt", value.imgAlt);
+        $img.attr("class", "img__photo");
+        // append <img> to <a>, then append to div.img
+        $a.append($img);
+        $(".img").append($a);
+    })
 
 
 
