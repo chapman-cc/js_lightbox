@@ -5,3 +5,10 @@
     @include center-container($max: 1024px) ;
 }
 
+.img {
+    @include flexy($justify: space-between);
+
+    & img { // TODO: need to change to class name
+        margin: em(28px)
+    }
+}
