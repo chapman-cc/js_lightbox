@@ -85,9 +85,11 @@ $(document).ready(function() {
         $a.attr("href", `photos/${value.imgFile}.jpg`)
         //Create <img> tag, add source path, add alt value
         let $img = $("<img>");
-        $img.attr("src", `photos/thumbnails/${value.imgFile}.jpg`)
-        $img.attr("alt", value.imgAlt);
-        $img.attr("class", "img__photo");
+        $img.attr({
+            "class": "img__photo",
+            "alt": value.imgAlt,
+            "src": `photos/thumbnails/${value.imgFile}.jpg`
+        });
         // append <img> to <a>, then append to div.img
         $a.append($img);
         $(".img").append($a);
