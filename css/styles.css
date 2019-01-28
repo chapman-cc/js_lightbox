@@ -25,17 +25,17 @@
   justify-content: space-between;
   align-items: center;
 }
-.img__photo {
+.img__thumbnail {
   margin: 0.1875em;
   width: 9.75em;
 }
 @media only screen and (min-width: 768px) {
-  .img__photo {
+  .img__thumbnail {
     margin: 0.875em;
   }
 }
 @media only screen and (min-width: 1024px) {
-  .img__photo {
+  .img__thumbnail {
     margin: 1.75em;
   }
 }
