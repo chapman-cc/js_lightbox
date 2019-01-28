@@ -5,3 +5,6 @@ photos/.DS_Store
 photo_lightbox.png
 .tern-project
 *.zip
+js/dist/luminous-basic.css
+js/dist/luminous.min.js.map
+js/dist/Luminous.js
