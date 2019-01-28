@@ -1,0 +1,23 @@
+// ----- Base input and textarea ----------
+// ----------
+
+.form {
+    &__label {
+        &--hidden {
+            display: none;
+        }
+    }
+
+    &__input {
+        @extend %btn-round-box;
+        width: 100%;
+        border-bottom: 0.5em solid $color-primary;
+        padding-left: 1em;
+        padding-right: 1em;
+
+        &::placeholder {
+            font-size: 0.8em;
+            font-style: oblique;
+        }
+    }
+}
