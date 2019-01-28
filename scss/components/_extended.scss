@@ -31,6 +31,6 @@
 %round-box {
     padding: em(16px);
     margin-bottom: 1em;
-    border: none;
-    border-radius: 5px;
+    border: 2px $silver solid;
+    border-radius: 10px;
 }
