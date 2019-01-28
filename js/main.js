@@ -98,6 +98,18 @@ $(document).ready(function() {
         $a.append($img);
         $(".img").append($a);
     })
+    // ---------- Search bar ----------
+    $('#searchBar').on('keyup', function() {
+        $('.img a').each(function() {
+            let $searchTerm = $('#searchBar').val().toLowerCase();
+            if ($(this).attr("title").toLowerCase().indexOf($searchTerm) >= 0) {
+                $(this).toggle()
+            }
+        })
+    });
+
+    // const $arrayAtag = $('.img a').attr("title");
+    // console.log($arrayAtag);
 
     // ---------- Search bar ---------- 
 
