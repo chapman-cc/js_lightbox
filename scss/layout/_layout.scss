@@ -8,7 +8,7 @@
 .img {
     @include flexy($justify: space-between);
 
-    & img { // TODO: need to change to class name
+    &__photo { 
         margin: em(28px)
     }
 }
