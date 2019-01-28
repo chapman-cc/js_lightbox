@@ -3,7 +3,7 @@
 // -------------------------------------------
 
 [class^="btn--"] {
-    @extend %btn-round-box;
+    @extend %round-box;
     color: $white;
     text-transform: uppercase;
     @include mq(small) {

@@ -9,7 +9,7 @@
     }
 
     &__input {
-        @extend %btn-round-box;
+        @extend %round-box;
         width: 100%;
         border-bottom: 0.5em solid $color-primary;
         padding-left: 1em;
