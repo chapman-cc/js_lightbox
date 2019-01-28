@@ -3,6 +3,7 @@
 // ========================================
 .container {
     @include center-container($max: 1024px) ;
+    min-width: 360px;
 }
 
 .img {
