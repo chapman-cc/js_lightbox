@@ -82,15 +82,16 @@ $(document).ready(function() {
         // create <a> tag, add href path
         let $a = $("<a>");
         $a.attr({
-            "class": "img__link",
-            "href": `photos/${value.imgFile}.jpg`
+            "class":    "img__link",
+            "href":     `photos/${value.imgFile}.jpg`,
+            "title":    value.imgCaption
         });
         //Create <img> tag, add source path, add alt value
         let $img = $("<img>");
         $img.attr({
-            "class": "img__thumbnail",
-            "alt": value.imgAlt,
-            "src": `photos/thumbnails/${value.imgFile}.jpg`
+            "class":    "img__thumbnail",
+            "alt":      value.imgAlt,
+            "src":      `photos/thumbnails/${value.imgFile}.jpg`
         });
         // append <img> to <a>, then append to div.img
         $a.append($img);
@@ -99,6 +100,13 @@ $(document).ready(function() {
 
     // ========================================
     // ---------- Plugin: viewbox ----------
+    // config
+    $(function(){
+	$('.thumbnail').viewbox({
+		setTitle: true //add caption if link has title attribute
+	});
+});
+    // implementation
     $(function(){
     	$('.img__link').viewbox();
     });
