@@ -103,8 +103,10 @@ $(document).ready(function() {
     $('#searchBar').on('keyup', function() {
         $('.img a').each(function() {
             let $searchTerm = $('#searchBar').val().toLowerCase();
-            if ($(this).attr("title").toLowerCase().indexOf($searchTerm) >= 0) {
-                $(this).toggle()
+            if (!($(this).attr("title").toLowerCase().indexOf($searchTerm) >= 0)) {
+                $(this).hide()
+            } else {
+                $(this).show();
             }
         })
     });
