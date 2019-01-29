@@ -5,3 +5,4 @@ photos/.DS_Store
 photo_lightbox.png
 .tern-project
 *.zip
+*.scss
