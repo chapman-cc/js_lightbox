@@ -1,8 +1,9 @@
 // ========================================
 // LAYOUT
 // ========================================
+
 .container {
-    @include center-container($max: 1024px) ;
+    @include center-container($max: 1024px);
     min-width: 300px;
 }
 
@@ -10,17 +11,15 @@
     @include flexy($justify: space-between);
 
     &__thumbnail {
-        margin: em(3px);
-        width: em(156px);
-    }
-    @include mq(middle) {
-        &__thumbnail {
+        @include mq(small) {
+            margin: em(3px);
+            width: em(156px);
+        };
+        @include mq(middle) {
             margin: em(14px);
         }
-    };
-    @include mq(big) {
-        &__thumbnail {
+        @include mq(big) {
             margin: em(28px);
         }
-    };
+    }
 }

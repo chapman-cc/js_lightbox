@@ -25,9 +25,11 @@
   justify-content: space-between;
   align-items: center;
 }
-.img__thumbnail {
-  margin: 0.1875em;
-  width: 9.75em;
+@media only screen and (max-width: 768px) {
+  .img__thumbnail {
+    margin: 0.1875em;
+    width: 9.75em;
+  }
 }
 @media only screen and (min-width: 768px) {
   .img__thumbnail {
